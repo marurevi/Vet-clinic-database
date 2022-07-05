@@ -13,4 +13,4 @@
 -- ADD species VARCHAR(50);
 
 UPDATE animals
-SET species= 'unspecified';
+SET species= NULL;
