@@ -27,3 +27,5 @@
 -- WHERE species ISNULL;
 
 -- DELETE FROM animals;
+
+DELETE FROM animals WHERE date_of_birth > '2022-01-01';
