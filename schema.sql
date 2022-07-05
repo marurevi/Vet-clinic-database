@@ -12,5 +12,12 @@
 -- ALTER TABLE animals
 -- ADD species VARCHAR(50);
 
+-- UPDATE animals
+-- SET species= 'unspecified';
+
+-- UPDATE animals
+-- SET species= NULL;
+
 UPDATE animals
-SET species= NULL;
+SET species= 'digimon'
+WHERE name LIKE '%mon';
