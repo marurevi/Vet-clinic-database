@@ -22,6 +22,8 @@
 -- SET species= 'digimon'
 -- WHERE name LIKE '%mon';
 
-UPDATE animals
-SET species= 'pokemon'
-WHERE species ISNULL;
+-- UPDATE animals
+-- SET species= 'pokemon'
+-- WHERE species ISNULL;
+
+-- DELETE FROM animals;
