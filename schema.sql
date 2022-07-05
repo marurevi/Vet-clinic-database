@@ -9,5 +9,8 @@
 --     PRIMARY KEY (id)
 -- );
 
-ALTER TABLE animals
-ADD species VARCHAR(50);
+-- ALTER TABLE animals
+-- ADD species VARCHAR(50);
+
+UPDATE animals
+SET species= 'unspecified';
