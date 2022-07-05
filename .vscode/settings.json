@@ -1,0 +1,14 @@
+{
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 5432,
+            "driver": "PostgreSQL",
+            "name": "vet_clinic",
+            "database": "vet_clinic",
+            "username": "postgres",
+            "password": "M1cr0v3rs3"
+        }
+    ]
+}
