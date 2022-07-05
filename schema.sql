@@ -18,6 +18,10 @@
 -- UPDATE animals
 -- SET species= NULL;
 
+-- UPDATE animals
+-- SET species= 'digimon'
+-- WHERE name LIKE '%mon';
+
 UPDATE animals
-SET species= 'digimon'
-WHERE name LIKE '%mon';
+SET species= 'pokemon'
+WHERE species ISNULL;
