@@ -79,4 +79,4 @@ ON animals.owner_id = (
 SELECT COUNT(animals.name) AS number_pkmns, owners.full_name 
 FROM animals JOIN owners ON animals.owner_id = owners.id 
 GROUP BY owners.full_name
-ORDER BY number_pkmns DESC LIMIT    1;
+ORDER BY number_pkmns DESC LIMIT 1;
