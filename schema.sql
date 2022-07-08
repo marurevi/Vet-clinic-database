@@ -9,6 +9,8 @@ CREATE TABLE animals (
     PRIMARY KEY (id)
 );
 
+/* SECOND PULL REQUEST */
+
 ALTER TABLE animals
 ADD species VARCHAR(50);
 
@@ -67,3 +69,30 @@ ADD FOREIGN KEY(species_id) REFERENCES species(id);
 ALTER TABLE animals 
 ADD COLUMN owner_id INT, 
 ADD FOREIGN KEY(owner_id) REFERENCES owners(id);
+
+/* FOURTH PULL REQUEST */
+
+CREATE TABLE vets (
+    id INT GENERATED ALWAYS AS IDENTITY,
+    name VARCHAR(50),
+    age INT,
+    date_of_graduation DATE,
+    PRIMARY KEY (id)
+);
+
+-- Join Tables:
+
+CREATE TABLE specializations (
+    vets_id INT,
+    species_id INT,
+    FOREIGN KEY (vets_id) REFERENCES vets(id),
+    FOREIGN KEY (species_id) REFERENCES species(id)
+);
+
+CREATE TABLE visits (
+    animals_id INT,
+    vets_id INT,
+    day_of_visit DATE,
+    FOREIGN KEY (animals_id) REFERENCES animals(id),
+    FOREIGN KEY (vets_id) REFERENCES vets(id)
+);
