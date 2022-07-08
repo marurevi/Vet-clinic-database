@@ -127,7 +127,8 @@ SELECT SUM(count) AS how_many FROM (
 SELECT COUNT(distinct v.day_of_visit) FROM visits v
 JOIN animals a ON v.animals_id = a.id
 LEFT JOIN specializations AS sp ON v.vets_id = sp.vets_id
-WHERE a.species_id <> sp.species_id
+WHERE a.species_id <> sp.species_id 
+AND v.vets_id <> (SELECT id FROM vets WHERE name LIKE 'Stephanie Mendez')
 UNION ALL
 SELECT COUNT(v.day_of_visit) FROM visits v
 JOIN animals a ON v.animals_id = a.id
