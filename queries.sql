@@ -148,4 +148,4 @@
 
 -- EXPLAIN ANALYZE SELECT * FROM visits where vets_id = 2;
 
-EXPLAIN ANALYSE SELECT * FROM owners where email = 'owner_18327@mail.com';
+-- EXPLAIN ANALYSE SELECT * FROM owners where email = 'owner_18327@mail.com';
